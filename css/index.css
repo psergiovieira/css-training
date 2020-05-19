@@ -52,12 +52,60 @@ body {
   justify-content: space-around;
 }
 
-.site-subtitle,
+
 .site-title {
   color: whitesmoke;
   text-align: center;
+  font-family: 'Sacramento', cursive;
 }
 
 .site-subtitle {
-  font-style: italic;
+  color: whitesmoke;
+  font-style: italic;  
+  font-family: 'Fira Mono', monospace;
+}
+
+.projects {
+  padding: 2em;
+}
+
+.projects h2 {
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  font-family: 'Squada One', cursive;
+}
+
+.projects .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px){
+  .projects .grid {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (min-width: 880px){
+  .projects h2{
+    padding: 4em;
+    text-align: center;
+  }
+  
+  .projects .grid {
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+  }
+}
+
+.projects figure {
+  text-align: center;
+}
+
+.projects .img-portfolio {
+  width: 240px;  
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
 }
